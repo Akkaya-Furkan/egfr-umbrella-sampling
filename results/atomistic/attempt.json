@@ -1,0 +1,29 @@
+{
+  "start_unix": 1792853498.947965,
+  "task_start_utc": "2026-10-24T14:49:21Z",
+  "hard_deadline_utc": "2026-10-24T17:39:21Z",
+  "preparation_pid": 950266,
+  "md_pid": 953760,
+  "md_deadline_unix": 1792862700.0,
+  "md_command": [
+    "nohup",
+    "systemd-inhibit",
+    "--what=sleep:idle",
+    "--why=P23 bounded HIP explicit-solvent MD",
+    "timeout",
+    "--signal=TERM",
+    "--kill-after=30s",
+    "8821s",
+    "/home/furkanakkaya/.conda/envs/openmm_env/bin/python",
+    "-u",
+    "scripts/run_atomistic.py",
+    "--deadline-unix",
+    "1792862700.0",
+    "--production-ps",
+    "400",
+    "--resume-equilibrated"
+  ],
+  "restart_reason": "Measured ~89 ns/day permits 400 ps/window instead of 100 ps; resume existing equilibrated checkpoint.",
+  "restart_unix": 1792853878.6694689,
+  "initial_md_python_pid": 952177
+}

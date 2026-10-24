@@ -1,0 +1,57 @@
+{
+  "pH": 7.4,
+  "seed": 23024,
+  "missing_residue_blocks": {
+    "(0, 0)": [
+      "GLY",
+      "SER",
+      "HIS",
+      "MET",
+      "ALA",
+      "SER"
+    ],
+    "(0, 293)": [
+      "LEU",
+      "PRO",
+      "SER",
+      "PRO",
+      "THR",
+      "ASP",
+      "SER",
+      "ASN",
+      "PHE",
+      "TYR",
+      "ARG",
+      "ALA"
+    ],
+    "(0, 312)": [
+      "GLN",
+      "GLN",
+      "GLY"
+    ]
+  },
+  "modeled_internal_blocks": {
+    "(0, 293)": [
+      "LEU",
+      "PRO",
+      "SER",
+      "PRO",
+      "THR",
+      "ASP",
+      "SER",
+      "ASN",
+      "PHE",
+      "TYR",
+      "ARG",
+      "ALA"
+    ]
+  },
+  "missing_heavy_atoms": {},
+  "residues": 324,
+  "atoms": 5213,
+  "limitations": [
+    "Internal loop is modeled, not experimentally resolved.",
+    "Unresolved N/C terminal residues omitted.",
+    "Default pH-based protonation; no pKa calculation."
+  ]
+}

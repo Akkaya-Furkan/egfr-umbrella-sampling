@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "egfr-umbrella-sampling"
 version = "0.1.0"
-description = "Auditable umbrella/WHAM model validation and EGFR coordinate preparation"
+description = "Auditable umbrella/WHAM validation and bounded atomistic EGFR pilot"
 requires-python = ">=3.10"
 dependencies = ["numpy>=2,<3", "scipy>=1.14,<2", "matplotlib>=3.9,<4"]
 

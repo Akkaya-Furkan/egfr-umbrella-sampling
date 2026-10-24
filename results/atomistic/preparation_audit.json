@@ -1,0 +1,132 @@
+{
+  "system_atoms": 132590,
+  "residue_counts": {
+    "GLY": 19,
+    "GLU": 26,
+    "ALA": 20,
+    "PRO": 18,
+    "ASN": 8,
+    "GLN": 10,
+    "LEU": 33,
+    "ARG": 16,
+    "ILE": 25,
+    "LYS": 23,
+    "THR": 13,
+    "PHE": 8,
+    "VAL": 23,
+    "SER": 16,
+    "TYR": 13,
+    "TRP": 6,
+    "ASP": 21,
+    "MET": 12,
+    "HID": 7,
+    "CYS": 6,
+    "HIE": 1,
+    "AQ4": 1,
+    "Na+": 8,
+    "WAT": 42439
+  },
+  "ligand_atoms": 52,
+  "ligand_heavy_atoms": 29,
+  "ligand_charge_e": -5.021319993137041e-08,
+  "system_charge_e": -2.011272570712208e-07,
+  "box_angstrom": [
+    139.427678,
+    112.646168,
+    97.920857,
+    90.0,
+    90.0,
+    90.0
+  ],
+  "max_ligand_crystal_coordinate_change_angstrom": 0.0,
+  "expected_prepared_inputs": 7,
+  "verified_prepared_inputs": 7,
+  "inputs": {
+    "solvated.prmtop": {
+      "bytes": 22585543,
+      "sha256": "49d835dd38576e221dc398d4fae88d0b6078a4b57ca10248f2de3edee36575e9"
+    },
+    "solvated.inpcrd": {
+      "bytes": 4839628,
+      "sha256": "71dcb779df84115c7658abd31a53b9c84525eac51b10f825e764f08fff8f5537"
+    },
+    "dry.prmtop": {
+      "bytes": 2299612,
+      "sha256": "66117145e78ed3f3d1a2a45f839409d952c00cc124d8e94b8bfd171147ab2427"
+    },
+    "dry.inpcrd": {
+      "bytes": 192193,
+      "sha256": "202653fb54ff69c0cb1310a8d6d54aa1d3b9231a0cd8c0cf509b34cb78806854"
+    },
+    "ligand.mol2": {
+      "bytes": 4069,
+      "sha256": "78fa66203b8da058095aa982d8ca1bbe1c65cd02efe2f5e1cc012634998c5e10"
+    },
+    "ligand.frcmod": {
+      "bytes": 1313,
+      "sha256": "c9f20ab19da31cfdd5a3b70f4286282f3cbed816220fbb232dbbb11c1d3dde5a"
+    },
+    "protein_amber.pdb": {
+      "bytes": 422355,
+      "sha256": "ca6c336f26186c048c3bac20e7476512b6b2d230c28d749534258919745de735"
+    }
+  },
+  "conda_installation_records": {
+    "ambertools": [
+      {
+        "name": "openbabel",
+        "version": "3.1.1",
+        "build": "py310hbff9852_9",
+        "channel": "https://conda.anaconda.org/conda-forge/linux-64"
+      },
+      {
+        "name": "parmed",
+        "version": "4.3.1",
+        "build": "py310h83d6740_0",
+        "channel": "https://conda.anaconda.org/conda-forge/linux-64"
+      },
+      {
+        "name": "ambertools",
+        "version": "24.8",
+        "build": "cuda_None_nompi_py310h834fefc_101",
+        "channel": "https://conda.anaconda.org/conda-forge/linux-64"
+      }
+    ],
+    "openmm": [
+      {
+        "name": "openmm",
+        "version": "8.5.2",
+        "build": "py310hc82e367_0",
+        "channel": "https://conda.anaconda.org/conda-forge/linux-64"
+      },
+      {
+        "name": "pdbfixer",
+        "version": "1.12",
+        "build": "pyhd8ed1ab_1",
+        "channel": "https://conda.anaconda.org/conda-forge/noarch"
+      }
+    ]
+  },
+  "runtime_versions": {
+    "openmm": "8.6",
+    "pdbfixer": "1.12.0"
+  },
+  "remote_sources": [
+    {
+      "url": "https://files.rcsb.org/download/1M17.pdb",
+      "bytes": 252720,
+      "sha256": "5b020cd186307d657de80611793554b074f6936a3443d33f81d9b1a58004962e"
+    },
+    {
+      "url": "https://models.rcsb.org/v1/1m17/ligand?auth_asym_id=A&auth_seq_id=999&encoding=sdf",
+      "bytes": 3429,
+      "sha256": "5176700fe680b6a057863fcd323b7e4227232598fb99a1a167aec3863fe1567e"
+    }
+  ],
+  "preparation_errors_resolved": [
+    "Initial LEaP failed: NGLY terminal H lacked atom type; renamed H to H1.",
+    "AM1-BCC text charges summed to -0.001e; uniform +0.000019230769e correction per atom."
+  ],
+  "leap_final_errors": 0,
+  "leap_final_warnings": 18
+}

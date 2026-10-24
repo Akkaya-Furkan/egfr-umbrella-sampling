@@ -1,0 +1,9 @@
+{
+  "terminal_h_renamed": 1,
+  "ligand_atoms": 52,
+  "original_charge_e": -0.0009999999999999731,
+  "corrected_charge_e": -4.0000000312012673e-08,
+  "uniform_charge_correction_e": 1.9230769230768713e-05,
+  "max_heavy_coordinate_change_angstrom": 0.0,
+  "charge_method": "GAFF2 / sqm AM1-BCC, neutral AQ4; uniform text-rounding correction"
+}

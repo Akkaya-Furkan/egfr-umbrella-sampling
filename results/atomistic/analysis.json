@@ -1,0 +1,266 @@
+{
+  "status": "PMF yak\u0131nsamad\u0131/kan\u0131tlanmad\u0131",
+  "accepted": false,
+  "expected_windows": 17,
+  "actual_windows": 17,
+  "failures": [
+    "adjacent_overlap",
+    "effective_samples",
+    "ten_blocks",
+    "solver",
+    "fixed_interval_support",
+    "half_agreement",
+    "quarter_agreement",
+    "bootstrap"
+  ],
+  "gates": {
+    "complete_production": true,
+    "burn_in": true,
+    "relaxed_nonclashing_starts": true,
+    "finite_samples": true,
+    "production_duration": true,
+    "adjacent_overlap": false,
+    "effective_samples": false,
+    "ten_blocks": false,
+    "solver": false,
+    "fixed_interval_support": false,
+    "half_agreement": false,
+    "quarter_agreement": false,
+    "bootstrap": false,
+    "periodic_image_safety": true
+  },
+  "samples_per_window": [
+    4000,
+    4000,
+    4000,
+    4000,
+    4000,
+    4000,
+    4000,
+    4000,
+    4000,
+    4000,
+    4000,
+    4000,
+    4000,
+    4000,
+    4000,
+    4000,
+    4000
+  ],
+  "production_ps_per_window": [
+    400.0,
+    400.0,
+    400.0,
+    400.0,
+    400.0,
+    400.0,
+    400.0,
+    400.0,
+    400.0,
+    400.0,
+    400.0,
+    400.0,
+    400.0,
+    400.0,
+    400.0,
+    400.0,
+    400.0
+  ],
+  "adjacent_overlap": [
+    0.9445,
+    0.91525,
+    0.402,
+    0.7994999999999999,
+    0.47200000000000003,
+    0.555,
+    0.8795,
+    0.2465,
+    0.209,
+    0.478,
+    0.063,
+    0.47725000000000006,
+    0.21075,
+    0.27175,
+    0.6797500000000001,
+    0.1385
+  ],
+  "minimum_overlap": 0.063,
+  "inefficiencies": [
+    81.20012343625484,
+    134.2510935608103,
+    133.43406310873632,
+    491.113491178123,
+    113.47059074777758,
+    59.22473308520467,
+    498.3535725679571,
+    131.56914057389972,
+    1649.7587977884455,
+    468.15911448333316,
+    615.6388824465542,
+    241.5141022352912,
+    407.138972024644,
+    190.8668319146248,
+    139.4080065577463,
+    378.0257640076715,
+    397.0481863213901
+  ],
+  "effective_samples": [
+    49.26100885967434,
+    29.79491558620461,
+    29.97735290980664,
+    8.144756908234132,
+    35.25142482858135,
+    67.53935039682378,
+    8.026429868634176,
+    30.402265930689737,
+    2.424596859469474,
+    8.544103652482457,
+    6.497315413386441,
+    16.56217986021812,
+    9.824655154254998,
+    20.957019927847963,
+    28.692756598187923,
+    10.581289374548623,
+    10.074343965803196
+  ],
+  "bootstrap_block_samples": 8249,
+  "complete_blocks_per_window": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "assessment_interval_nm": [
+    1.1649579038512015,
+    2.7649579038512018
+  ],
+  "assessment_bins": 160,
+  "reconstruction_support": [
+    {
+      "solve": 1,
+      "unsupported_assessment_bins": 0,
+      "reference_bin_sampled": true
+    },
+    {
+      "solve": 2,
+      "unsupported_assessment_bins": 0,
+      "reference_bin_sampled": true
+    }
+  ],
+  "solver_error": "WHAM failed to converge: residual=2.153079365996291e-05",
+  "solves_completed": 2,
+  "maximum_solver_residual_kbt": 9.999041594710434e-10,
+  "simulation_status": "production_complete",
+  "completed_window_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "expected_series": 17,
+  "verified_series": 17,
+  "missing_window_ids": [],
+  "simulation_error": null,
+  "simulation_elapsed_seconds": 6431.890632390976,
+  "input_series": {
+    "samples_00.npz": {
+      "bytes": 28629,
+      "sha256": "111ad5ede3f6a2c5e10b3fd525211db459289bc434159cea9567ab54e6549921"
+    },
+    "samples_01.npz": {
+      "bytes": 28631,
+      "sha256": "446a479ec02ef175c79c8084967901d1f2a2a75ad81d979f470218414b1938b1"
+    },
+    "samples_02.npz": {
+      "bytes": 28664,
+      "sha256": "061cd81dcdb13e8c9fa8937ced1235a0efc1b631b74a5dd3199422ae2b157a5c"
+    },
+    "samples_03.npz": {
+      "bytes": 28674,
+      "sha256": "c0caa016ac7642ad9dc43b3f7b2b218fb95ccfa1f311942587e38ddfd56fb8f8"
+    },
+    "samples_04.npz": {
+      "bytes": 28604,
+      "sha256": "e80d4521677c0716c4e766a7895cda45389a0e9c42d8eab4b0ee51d169445c01"
+    },
+    "samples_05.npz": {
+      "bytes": 28710,
+      "sha256": "3a9a068b6d6f39d1cf03488db6b2a6a2aef2ad9830c8cdba29479ba896b00bf8"
+    },
+    "samples_06.npz": {
+      "bytes": 28769,
+      "sha256": "6d849e72a55fa99a78e436de1c71ef93a197673ae8762b37b7be973a58aab2cc"
+    },
+    "samples_07.npz": {
+      "bytes": 28731,
+      "sha256": "9c6556b5f9ec71fc5e70817899186d22c760c02e20ab64868d21dd5f0e77930e"
+    },
+    "samples_08.npz": {
+      "bytes": 29284,
+      "sha256": "014d716ec761390156ae992986267e3bec087d70da97edd59efa8d7640413f3b"
+    },
+    "samples_09.npz": {
+      "bytes": 28945,
+      "sha256": "e3ff6d85d71c56f91ef8557dbed81c71879403b67df59f52341450bf3a862e87"
+    },
+    "samples_10.npz": {
+      "bytes": 28869,
+      "sha256": "049d2f4ca21534d924a7eee437cb966f0bc21f8e0928fcfd56c9d73b4562a2d3"
+    },
+    "samples_11.npz": {
+      "bytes": 28696,
+      "sha256": "95d69be8a31dcf42ea23ba610073c1db56cfb796b77d1c9726566635ef228b8b"
+    },
+    "samples_12.npz": {
+      "bytes": 28625,
+      "sha256": "e6b9b858d98e7c449555d30e71e6932463e0e4383abf71556971ef56898f4021"
+    },
+    "samples_13.npz": {
+      "bytes": 28639,
+      "sha256": "1b466396f716defc64f34c9b7a5c03c9a0d4710ccd641a885e55baedbb421061"
+    },
+    "samples_14.npz": {
+      "bytes": 28815,
+      "sha256": "cad85206f22aaf7d1f300538ea6bf02312aac9242f4d1a3f1406373152bd5d2c"
+    },
+    "samples_15.npz": {
+      "bytes": 28657,
+      "sha256": "946d5acf347cd7069a105a8c7edaa35dc0517256bf8cc183fc39432e375a2372"
+    },
+    "samples_16.npz": {
+      "bytes": 28588,
+      "sha256": "4d6eaf53a2fa04cc9ac4fb28c08a0850513ebc4350bd8a90e4b095c0501e169b"
+    }
+  },
+  "partial_windows": {},
+  "maximum_sampled_com_nm": 2.875118769040938,
+  "periodic_image_margin_nm": 1.7952843924706832,
+  "curve_artifact": "UNACCEPTED_diagnostic.csv"
+}

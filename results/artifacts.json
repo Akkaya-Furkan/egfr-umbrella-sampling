@@ -29,8 +29,8 @@
       "sha256": "0037f81678d992005a8f17173aab18827e5ba52619f806f23982f0353100598c"
     },
     "results/test-results.xml": {
-      "bytes": 1737,
-      "sha256": "7f95d5262d5fe70f0dbf8a616f0914103cb588cba3f2f737468930d5adcf860d"
+      "bytes": 2111,
+      "sha256": "98d2ea40a5d6b04bf801268288851972edaeffe492f9b78eb1e469474386632c"
     },
     "results/analysis_run.log": {
       "bytes": 984,
