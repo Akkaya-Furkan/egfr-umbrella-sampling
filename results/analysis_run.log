@@ -1,0 +1,33 @@
+{
+  "metrics": {
+    "expected_series": 34,
+    "actual_series": 34,
+    "expected_samples_per_series": 10000,
+    "actual_samples": 340000,
+    "min_samples_per_series": 10000,
+    "min_adjacent_overlap": 0.595,
+    "exact_pmf_rmse_kj_mol": 0.16600692444320367,
+    "split_half_rmse_kj_mol": 0.1981531359091752,
+    "replica_rmse_kj_mol": 0.2557807376784858,
+    "min_effective_samples": 140.16148136023554,
+    "max_inefficiency": 71.34627789997835,
+    "bootstrap_block_samples": 357,
+    "bootstrap_successful": 100,
+    "max_wham_residual_kbt": 9.999907568669641e-10,
+    "wham_solves": 105,
+    "assessment_bins": 65,
+    "bootstrap_std_finite": true,
+    "simulation_elapsed_seconds": 14.738978050998412
+  },
+  "gates": {
+    "complete_series": true,
+    "wham_converged": true,
+    "overlap": true,
+    "exact_accuracy": true,
+    "split_consistency": true,
+    "replica_consistency": true,
+    "effective_samples": true,
+    "block_length": true,
+    "bootstrap": true
+  }
+}

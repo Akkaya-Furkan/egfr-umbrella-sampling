@@ -1,0 +1,11 @@
+{
+  "python": "3.10.20 | packaged by conda-forge | (main, Jun 11 2026, 03:31:56) [GCC 14.3.0]",
+  "openmm_full_version": "8.6.0.dev-c6173db",
+  "packages": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.2",
+    "matplotlib": "3.10.9",
+    "openmm": "8.6.0",
+    "pytest": "9.1.1"
+  }
+}

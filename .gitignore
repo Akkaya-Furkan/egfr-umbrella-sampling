@@ -4,3 +4,11 @@ __pycache__/
 .env
 .ipynb_checkpoints/
 data/raw/
+*.dcd
+*.xtc
+*.trr
+*.cpt
+*.tpr
+*.edr
+*.egg-info/
+.pytest_cache/

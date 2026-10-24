@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "egfr-umbrella-sampling"
+version = "0.1.0"
+description = "Auditable umbrella/WHAM model validation and EGFR coordinate preparation"
+requires-python = ">=3.10"
+dependencies = ["numpy>=2,<3", "scipy>=1.14,<2", "matplotlib>=3.9,<4"]
+
+[project.optional-dependencies]
+md = ["openmm==8.6.0"]
+test = ["pytest>=8,<10"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

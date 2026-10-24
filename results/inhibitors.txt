@@ -1,0 +1,15 @@
+WHO                                      UID  USER         PID    COMM            WHAT                                                     WHY                                                         MODE
+NetworkManager                           0    root         1230   NetworkManager  sleep                                                    NetworkManager needs to turn off networks                   delay
+UPower                                   0    root         1043   upowerd         sleep                                                    Pause device polling                                        delay
+Codex                                    1000 furkanakkaya 15261  ChatGPT         shutdown                                                 Saving browser state                                        delay
+GNOME Shell                              1000 furkanakkaya 1942   gnome-shell     sleep                                                    GNOME’un ekran süresi verisini kaydetmesi gerekiyor         delay
+GNOME Shell                              1000 furkanakkaya 1942   gnome-shell     sleep                                                    GNOME’un ekranı kilitlemesi gerekiyor                       delay
+bash -c systemd-inhibit --list > result… 1000 furkanakkaya 890035 systemd-inhibit sleep:idle                                               P23 umbrella model production                               block
+claude-desktop                           1000 furkanakkaya 116220 claude-desktop  sleep                                                    Application cleanup before suspend                          delay
+furkanakkaya                             1000 furkanakkaya 2254   gsd-power       handle-lid-switch                                        External monitor attached or configuration changed recently block
+furkanakkaya                             1000 furkanakkaya 2250   gsd-media-keys  handle-power-key:handle-suspend-key:handle-hibernate-key GNOME handling keypresses                                   block
+furkanakkaya                             1000 furkanakkaya 2250   gsd-media-keys  sleep                                                    GNOME handling keypresses                                   delay
+furkanakkaya                             1000 furkanakkaya 2254   gsd-power       sleep                                                    GNOME needs to lock the screen                              delay
+furkanakkaya                             1000 furkanakkaya 1920   gnome-session-s sleep                                                    user session inhibited                                      block-weak
+
+12 inhibitors listed.

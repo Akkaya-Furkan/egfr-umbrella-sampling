@@ -1,0 +1,276 @@
+{
+  "config": {
+    "temperature_K": 300.0,
+    "mass_Da": 10.0,
+    "friction_per_ps": 10.0,
+    "dt_ps": 0.002,
+    "burn_steps": 50000,
+    "production_steps": 500000,
+    "stride": 50,
+    "spring_kj_mol_nm2": 100.0,
+    "centers_nm": [
+      -0.8,
+      -0.7000000000000001,
+      -0.6000000000000001,
+      -0.5,
+      -0.4,
+      -0.30000000000000004,
+      -0.19999999999999996,
+      -0.09999999999999998,
+      0.0,
+      0.09999999999999998,
+      0.19999999999999996,
+      0.30000000000000004,
+      0.40000000000000013,
+      0.5,
+      0.6000000000000001,
+      0.7,
+      0.8
+    ],
+    "replicas": 2
+  },
+  "records": [
+    {
+      "replica": 0,
+      "window": 0,
+      "seed": 230000,
+      "samples": 10000,
+      "final_energy_kj_mol": 7.62137998135663
+    },
+    {
+      "replica": 0,
+      "window": 1,
+      "seed": 230001,
+      "samples": 10000,
+      "final_energy_kj_mol": 5.267522676838086
+    },
+    {
+      "replica": 0,
+      "window": 2,
+      "seed": 230002,
+      "samples": 10000,
+      "final_energy_kj_mol": 4.899502813355339
+    },
+    {
+      "replica": 0,
+      "window": 3,
+      "seed": 230003,
+      "samples": 10000,
+      "final_energy_kj_mol": 1.1017766792736536
+    },
+    {
+      "replica": 0,
+      "window": 4,
+      "seed": 230004,
+      "samples": 10000,
+      "final_energy_kj_mol": 2.7862322142023954
+    },
+    {
+      "replica": 0,
+      "window": 5,
+      "seed": 230005,
+      "samples": 10000,
+      "final_energy_kj_mol": 4.0815453510746735
+    },
+    {
+      "replica": 0,
+      "window": 6,
+      "seed": 230006,
+      "samples": 10000,
+      "final_energy_kj_mol": 8.615404773672187
+    },
+    {
+      "replica": 0,
+      "window": 7,
+      "seed": 230007,
+      "samples": 10000,
+      "final_energy_kj_mol": 8.934902870806138
+    },
+    {
+      "replica": 0,
+      "window": 8,
+      "seed": 230008,
+      "samples": 10000,
+      "final_energy_kj_mol": 10.70154199617739
+    },
+    {
+      "replica": 0,
+      "window": 9,
+      "seed": 230009,
+      "samples": 10000,
+      "final_energy_kj_mol": 8.67289463203299
+    },
+    {
+      "replica": 0,
+      "window": 10,
+      "seed": 230010,
+      "samples": 10000,
+      "final_energy_kj_mol": 4.306879711475105
+    },
+    {
+      "replica": 0,
+      "window": 11,
+      "seed": 230011,
+      "samples": 10000,
+      "final_energy_kj_mol": 5.139467221210173
+    },
+    {
+      "replica": 0,
+      "window": 12,
+      "seed": 230012,
+      "samples": 10000,
+      "final_energy_kj_mol": 2.6145722780985885
+    },
+    {
+      "replica": 0,
+      "window": 13,
+      "seed": 230013,
+      "samples": 10000,
+      "final_energy_kj_mol": 8.1145391984258
+    },
+    {
+      "replica": 0,
+      "window": 14,
+      "seed": 230014,
+      "samples": 10000,
+      "final_energy_kj_mol": 4.554958272487678
+    },
+    {
+      "replica": 0,
+      "window": 15,
+      "seed": 230015,
+      "samples": 10000,
+      "final_energy_kj_mol": 4.047647587479597
+    },
+    {
+      "replica": 0,
+      "window": 16,
+      "seed": 230016,
+      "samples": 10000,
+      "final_energy_kj_mol": 6.541973114191647
+    },
+    {
+      "replica": 1,
+      "window": 0,
+      "seed": 230100,
+      "samples": 10000,
+      "final_energy_kj_mol": 4.02469719184307
+    },
+    {
+      "replica": 1,
+      "window": 1,
+      "seed": 230101,
+      "samples": 10000,
+      "final_energy_kj_mol": 3.438875332835173
+    },
+    {
+      "replica": 1,
+      "window": 2,
+      "seed": 230102,
+      "samples": 10000,
+      "final_energy_kj_mol": 0.41141617770748456
+    },
+    {
+      "replica": 1,
+      "window": 3,
+      "seed": 230103,
+      "samples": 10000,
+      "final_energy_kj_mol": 7.788918018753106
+    },
+    {
+      "replica": 1,
+      "window": 4,
+      "seed": 230104,
+      "samples": 10000,
+      "final_energy_kj_mol": 2.230443574609491
+    },
+    {
+      "replica": 1,
+      "window": 5,
+      "seed": 230105,
+      "samples": 10000,
+      "final_energy_kj_mol": 1.5967223636408985
+    },
+    {
+      "replica": 1,
+      "window": 6,
+      "seed": 230106,
+      "samples": 10000,
+      "final_energy_kj_mol": 5.475937707820469
+    },
+    {
+      "replica": 1,
+      "window": 7,
+      "seed": 230107,
+      "samples": 10000,
+      "final_energy_kj_mol": 16.229086592230324
+    },
+    {
+      "replica": 1,
+      "window": 8,
+      "seed": 230108,
+      "samples": 10000,
+      "final_energy_kj_mol": 8.223809446326372
+    },
+    {
+      "replica": 1,
+      "window": 9,
+      "seed": 230109,
+      "samples": 10000,
+      "final_energy_kj_mol": 7.090202068609381
+    },
+    {
+      "replica": 1,
+      "window": 10,
+      "seed": 230110,
+      "samples": 10000,
+      "final_energy_kj_mol": 3.560083987882035
+    },
+    {
+      "replica": 1,
+      "window": 11,
+      "seed": 230111,
+      "samples": 10000,
+      "final_energy_kj_mol": 3.3056155663134423
+    },
+    {
+      "replica": 1,
+      "window": 12,
+      "seed": 230112,
+      "samples": 10000,
+      "final_energy_kj_mol": 3.1947336726636406
+    },
+    {
+      "replica": 1,
+      "window": 13,
+      "seed": 230113,
+      "samples": 10000,
+      "final_energy_kj_mol": 1.1648748557381
+    },
+    {
+      "replica": 1,
+      "window": 14,
+      "seed": 230114,
+      "samples": 10000,
+      "final_energy_kj_mol": 3.374573808528168
+    },
+    {
+      "replica": 1,
+      "window": 15,
+      "seed": 230115,
+      "samples": 10000,
+      "final_energy_kj_mol": 15.281372412567606
+    },
+    {
+      "replica": 1,
+      "window": 16,
+      "seed": 230116,
+      "samples": 10000,
+      "final_energy_kj_mol": 3.6207283462519135
+    }
+  ],
+  "elapsed_seconds": 14.738978050998412,
+  "openmm_version": "8.6",
+  "platform": "Reference",
+  "python": "3.10.20"
+}
