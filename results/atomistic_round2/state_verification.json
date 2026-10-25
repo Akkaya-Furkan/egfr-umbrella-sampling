@@ -1,0 +1,133 @@
+{
+  "expected_start_states": 18,
+  "verified_start_states": 18,
+  "nonclashing_start_states": 18,
+  "states": [
+    {
+      "window": 0,
+      "com_nm": 1.1827735666674093,
+      "minimum_heavy_nm": 0.30445463511316795,
+      "bytes": 21730641,
+      "sha256": "6ae0a43d838e1ec6b6d2e16e0b4a6cba055fb8449af44952c484c680e8e896f5"
+    },
+    {
+      "window": 1,
+      "com_nm": 1.2160185410774176,
+      "minimum_heavy_nm": 0.3029043073038922,
+      "bytes": 21733671,
+      "sha256": "80f43a95e6a23af766233ac4d5ff59e3b64fd5bb0adc01b551105144957547ce"
+    },
+    {
+      "window": 2,
+      "com_nm": 1.2165025311062592,
+      "minimum_heavy_nm": 0.3103495807377566,
+      "bytes": 21736260,
+      "sha256": "6ff76be8b2ec2fbd900115dc7adb1c6d67af50947802ed9b59575000b22e8d2a"
+    },
+    {
+      "window": 3,
+      "com_nm": 1.248208044914133,
+      "minimum_heavy_nm": 0.2996257856760292,
+      "bytes": 21738069,
+      "sha256": "8b6e99a617d511dfd6cabdf5cadb29b554602cc45e7fabf695216c4d6bee3852"
+    },
+    {
+      "window": 4,
+      "com_nm": 1.266631509832912,
+      "minimum_heavy_nm": 0.30668260844276213,
+      "bytes": 21738783,
+      "sha256": "57fd6d02ceb070360455da998fa2ebf672812dba6a6ac925184042517b4c8682"
+    },
+    {
+      "window": 5,
+      "com_nm": 1.265917245531136,
+      "minimum_heavy_nm": 0.30394517261145976,
+      "bytes": 21739868,
+      "sha256": "bf5eac4b83353d4e50ddecbe0567235e41e730b5215409f50150920ed61a5053"
+    },
+    {
+      "window": 6,
+      "com_nm": 1.275525585781641,
+      "minimum_heavy_nm": 0.2988272287298358,
+      "bytes": 21743233,
+      "sha256": "bf1ff5b7a9662a480e3c81c409aa5726bb8fada39503eee738b2b3129fc60a0b"
+    },
+    {
+      "window": 7,
+      "com_nm": 1.3426361981260704,
+      "minimum_heavy_nm": 0.30186448444814873,
+      "bytes": 21743720,
+      "sha256": "3d2f6ea4d99b7e7ba9deaa34573b99ef1ab4970956612228d311341d005012b5"
+    },
+    {
+      "window": 8,
+      "com_nm": 1.2719880571392017,
+      "minimum_heavy_nm": 0.30479362189452563,
+      "bytes": 21746288,
+      "sha256": "3da9c5b729a385c0a3b2242435733aaed58df5cd2290733cab0ea7ff8648772a"
+    },
+    {
+      "window": 9,
+      "com_nm": 1.8371516802339165,
+      "minimum_heavy_nm": 0.2938560976819823,
+      "bytes": 21748144,
+      "sha256": "2f8246c6f7c79e5165f126f84ed4e09d88dc44935779d6a92a7d775b2b653e9b"
+    },
+    {
+      "window": 10,
+      "com_nm": 1.3985220510396787,
+      "minimum_heavy_nm": 0.2924456126727808,
+      "bytes": 21748221,
+      "sha256": "7c7660706a1232805d247e7185ac3f3dc6559e5c73f0fe69cab016c5aadf7c75"
+    },
+    {
+      "window": 11,
+      "com_nm": 1.519528900076047,
+      "minimum_heavy_nm": 0.27687544247313695,
+      "bytes": 21748736,
+      "sha256": "1f97c92c26fb7b176adc546059395870136e717330268b69d68f003756851914"
+    },
+    {
+      "window": 12,
+      "com_nm": 2.3036211473055617,
+      "minimum_heavy_nm": 0.30001032862254573,
+      "bytes": 21749758,
+      "sha256": "409ba97258b351fbf24541e21dcac6dcfc0c6b4030baf82f5bd215ef79fdbe79"
+    },
+    {
+      "window": 13,
+      "com_nm": 2.397913636578767,
+      "minimum_heavy_nm": 0.3555606528849121,
+      "bytes": 21754314,
+      "sha256": "b1fd7683b33032c58ba9992264224f13a802e769de6aed4b06ea6c513bbd73e9"
+    },
+    {
+      "window": 14,
+      "com_nm": 2.448684456501286,
+      "minimum_heavy_nm": 0.3431289796346158,
+      "bytes": 21754929,
+      "sha256": "bff421453162016310a7b5199bbe58c41554b0e39244a54b9ce9decccc551b91"
+    },
+    {
+      "window": 15,
+      "com_nm": 2.6545915964276827,
+      "minimum_heavy_nm": 0.3276619355139677,
+      "bytes": 21754633,
+      "sha256": "bf42641ea5ae607a96ba2af533aea33d0c6ebaa061817154cd66d7eae040bc11"
+    },
+    {
+      "window": 16,
+      "com_nm": 2.602609242569894,
+      "minimum_heavy_nm": 0.36770562713899424,
+      "bytes": 21756729,
+      "sha256": "6334b4d0f6fdf978745b9ed2ff1ed2d3075414167f23792172304c339c177685"
+    },
+    {
+      "window": 17,
+      "com_nm": 2.773012492614959,
+      "minimum_heavy_nm": 0.36385227037010026,
+      "bytes": 21757651,
+      "sha256": "a28619bd57044715888ade2e7f5010ce684536ff141e9a2239450288df08891e"
+    }
+  ]
+}

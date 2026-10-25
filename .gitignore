@@ -20,3 +20,6 @@ results/atomistic/*.pdb
 results/atomistic/*.prmtop
 results/atomistic/*.inpcrd
 results/atomistic/*.nc
+results/atomistic_round2/*.log
+results/atomistic_round2/*.xml
+results/atomistic_round2.log

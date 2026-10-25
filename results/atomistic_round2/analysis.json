@@ -1,0 +1,276 @@
+{
+  "status": "PMF yak\u0131nsamad\u0131/kan\u0131tlanmad\u0131",
+  "accepted": false,
+  "expected_windows": 18,
+  "actual_windows": 18,
+  "failures": [
+    "effective_samples",
+    "ten_blocks",
+    "solver",
+    "fixed_interval_support",
+    "half_agreement",
+    "quarter_agreement",
+    "bootstrap"
+  ],
+  "gates": {
+    "complete_production": true,
+    "burn_in": true,
+    "relaxed_nonclashing_starts": true,
+    "finite_samples": true,
+    "production_duration": true,
+    "adjacent_overlap": true,
+    "effective_samples": false,
+    "ten_blocks": false,
+    "solver": false,
+    "fixed_interval_support": false,
+    "half_agreement": false,
+    "quarter_agreement": false,
+    "bootstrap": false,
+    "periodic_image_safety": true
+  },
+  "samples_per_window": [
+    5000,
+    5000,
+    5000,
+    5000,
+    5000,
+    5000,
+    5000,
+    5000,
+    5000,
+    5000,
+    5000,
+    5000,
+    5000,
+    5000,
+    5000,
+    5000,
+    5000,
+    5000
+  ],
+  "production_ps_per_window": [
+    500.0,
+    500.0,
+    500.0,
+    500.0,
+    500.0,
+    500.0,
+    500.0,
+    500.0,
+    500.0,
+    500.0,
+    500.0,
+    500.0,
+    500.0,
+    500.0,
+    500.0,
+    500.0,
+    500.0,
+    500.0
+  ],
+  "adjacent_overlap": [
+    0.6226,
+    0.8246,
+    0.7486,
+    0.597,
+    0.6934,
+    0.5548,
+    0.26759999999999995,
+    0.3638,
+    0.19679999999999997,
+    0.306,
+    0.5067999999999999,
+    0.2246,
+    0.4456,
+    0.3618,
+    0.4942,
+    0.12,
+    0.5212
+  ],
+  "minimum_overlap": 0.12,
+  "inefficiencies": [
+    223.2629213361749,
+    257.21904916005343,
+    206.4188693926675,
+    174.33200018965823,
+    125.73136406129127,
+    155.61185934202393,
+    839.9948754398523,
+    1556.08379520585,
+    1729.3223093898887,
+    801.7370912403769,
+    439.03454006779737,
+    341.9089012244463,
+    71.79363697200242,
+    79.3870038079571,
+    479.67829418117185,
+    370.17961797428507,
+    775.6755256444593,
+    78.6175623321098
+  ],
+  "effective_samples": [
+    22.39512038128052,
+    19.43868471766557,
+    24.22259173645882,
+    28.680907662164316,
+    39.76732486225641,
+    32.131227151591006,
+    5.9524172660956,
+    3.2131945692157045,
+    2.891306017883976,
+    6.236458378474721,
+    11.388625594760452,
+    14.623778386856758,
+    69.64405497314289,
+    62.98260118363154,
+    10.42365281200639,
+    13.506956507657671,
+    6.445994278143324,
+    63.599021028891
+  ],
+  "bootstrap_block_samples": 8647,
+  "complete_blocks_per_window": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "assessment_interval_nm": [
+    1.1649579038512015,
+    2.7649579038512018
+  ],
+  "assessment_bins": 160,
+  "reconstruction_support": [
+    {
+      "solve": 1,
+      "unsupported_assessment_bins": 0,
+      "reference_bin_sampled": true
+    },
+    {
+      "solve": 2,
+      "unsupported_assessment_bins": 0,
+      "reference_bin_sampled": true
+    }
+  ],
+  "solver_error": "WHAM failed to converge: residual=4.2199388872177224e-08",
+  "solves_completed": 2,
+  "maximum_solver_residual_kbt": 9.989946647692705e-10,
+  "simulation_status": "production_complete",
+  "completed_window_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "expected_series": 18,
+  "verified_series": 18,
+  "missing_window_ids": [],
+  "simulation_error": null,
+  "simulation_elapsed_seconds": 8208.068917512894,
+  "input_series": {
+    "samples_00.npz": {
+      "bytes": 35709,
+      "sha256": "dc918f9216dc592071a90cf6c26cd69a4629a4a59fdac6934ad2681f7559a675"
+    },
+    "samples_01.npz": {
+      "bytes": 35783,
+      "sha256": "d743c3f3a50b08a45ade1f860e2fc77e0c365a2cde6aaaef9f5fda0ac0c10fe0"
+    },
+    "samples_02.npz": {
+      "bytes": 35733,
+      "sha256": "bc9258f668e64426a156e2d457f83e13b258d89fe0ee0d0f4fa6eee731bf5009"
+    },
+    "samples_03.npz": {
+      "bytes": 35621,
+      "sha256": "51d3386056782cb0626535126db4ce6d1b1601e5255ccd6958041c7ab328bcd8"
+    },
+    "samples_04.npz": {
+      "bytes": 35721,
+      "sha256": "786aac475fbfb721fcf42eab690c0750481ff3fff4448fd1f7f5cba5f2bebe17"
+    },
+    "samples_05.npz": {
+      "bytes": 35764,
+      "sha256": "8044cab0a45d939ac19f0d7398cfe9a88e35351827fd8b0277f5027ece9c017e"
+    },
+    "samples_06.npz": {
+      "bytes": 35975,
+      "sha256": "40be39056cdddb27c7a48893074f363601bf27a38c923865ceae276bb1542ca6"
+    },
+    "samples_07.npz": {
+      "bytes": 36305,
+      "sha256": "4d3684abceb3dbb2dd87419e40c36e0ecb2940b8a4ba2974654a52cdeebdd21d"
+    },
+    "samples_08.npz": {
+      "bytes": 36461,
+      "sha256": "4f4ee7055a42dee52fe46ab9b5f17a19623b64726c4599574654d0b4e66fe300"
+    },
+    "samples_09.npz": {
+      "bytes": 35872,
+      "sha256": "574b80918a91655759f0916ae2d854244e6d8d7cf2a002c526abeabd27a4267d"
+    },
+    "samples_10.npz": {
+      "bytes": 36027,
+      "sha256": "5dd78832021aa849583afe46e73bf34666ea71bae71bca6329ab489662234ab1"
+    },
+    "samples_11.npz": {
+      "bytes": 35964,
+      "sha256": "670c3f65a52b9efbdbfa4c42aace3f249b904a843911740cc5491339b8a6154a"
+    },
+    "samples_12.npz": {
+      "bytes": 35771,
+      "sha256": "b7d80d23b626a2bf72d02169ececf7d083b4715f0597946af92f2cafa58af727"
+    },
+    "samples_13.npz": {
+      "bytes": 35788,
+      "sha256": "54c139583bb0361244c484332a35e0813f487bbb7ddc67b4681f92369432d0e4"
+    },
+    "samples_14.npz": {
+      "bytes": 35857,
+      "sha256": "705276b286d30f62d479445f496212a2fbc3c31bf711cd645be415a78d79c450"
+    },
+    "samples_15.npz": {
+      "bytes": 35754,
+      "sha256": "ce876538baede28c9e84f4087a13f57655ee3e087cc93cf337fcabf9133e658a"
+    },
+    "samples_16.npz": {
+      "bytes": 35705,
+      "sha256": "3a5bd8efe9b474cf9b0b99cc1bd082cb37d32027923b83f153a5084dc6a681a0"
+    },
+    "samples_17.npz": {
+      "bytes": 35806,
+      "sha256": "9d65e469c00e4f7d2867d290fff0bade20fde580e3df51e3b21b4b8265b85ff2"
+    }
+  },
+  "partial_windows": {},
+  "maximum_sampled_com_nm": 2.9355317732990964,
+  "periodic_image_margin_nm": 1.7348713882125248,
+  "curve_artifact": "UNACCEPTED_diagnostic.csv"
+}

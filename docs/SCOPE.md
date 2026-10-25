@@ -88,3 +88,12 @@ it a standard-state binding free energy. Failure of any gate must be reported as
 An unconverged numerical reconstruction may only be retained as explicitly
 unaccepted diagnostic data, never as the EGFR result. Bound the entire attempt
 to <=10800 wall seconds; use nohup, timeout and sleep/idle inhibition for MD.
+
+## Round 2 (2026-10-25) — no gate changed
+Thresholds above were not altered. Round 2 added one window (18 total, centers
+unchanged otherwise, k=1000 kJ/mol/nm²) and 500 ps/window re-sampling, because
+round 1 showed one overlap failure (pair 10–11) and autocorrelation too long for
+400 ps. `assess` now takes `expected_windows` (=number of planned windows)
+instead of the literal 17; the checks themselves are the same. Outcome: overlap
+gate passes, effective-sample, ten-block, solver, support, half/quarter and
+bootstrap gates fail → **PMF yakınsamadı/kanıtlanmadı**.

@@ -38,3 +38,21 @@ def test_recorded_run_is_not_accepted():
     assert not report['accepted']
     assert not report['gates']['adjacent_overlap'] and not report['gates']['effective_samples']
     assert report['curve_artifact']=='UNACCEPTED_diagnostic.csv'
+
+
+def test_round2_recorded_run_is_not_accepted_but_overlap_passes():
+    import json, pathlib
+    path = pathlib.Path(__file__).parents[1]/'results/atomistic_round2/analysis.json'
+    report = json.loads(path.read_text())
+    assert report['actual_windows']==18 and report['expected_windows']==18
+    assert min(report['samples_per_window'])==5000
+    assert not report['accepted']
+    assert report['gates']['adjacent_overlap'] and report['minimum_overlap']>=.10
+    assert not report['gates']['effective_samples'] and not report['gates']['ten_blocks']
+    assert report['curve_artifact']=='UNACCEPTED_diagnostic.csv'
+
+
+def test_expected_windows_is_configurable_not_a_threshold():
+    xs = [np.array([1.,2.,3.,np.nan]) for _ in range(18)]
+    report,_ = assess(xs,np.linspace(1,2.6,18),complete=True,expected_windows=18)
+    assert report['expected_windows']==18 and not report['accepted']

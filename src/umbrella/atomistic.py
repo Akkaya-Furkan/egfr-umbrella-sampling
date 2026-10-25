@@ -5,7 +5,8 @@ from .analysis import R, align, histograms, inefficiency, overlap, resample_bloc
 
 
 def assess(series, centers, *, spring=1000., temperature=300., interval_ps=.1,
-           burn_ps=20., starts=None, complete=False, bootstrap=100, seed=23024):
+           burn_ps=20., starts=None, complete=False, bootstrap=100, seed=23024,
+           expected_windows=17):
     """Return JSON-safe evidence plus an explicitly conditional diagnostic curve.
 
     A solver solution alone never implies physical convergence. Missing/invalid
@@ -13,15 +14,15 @@ def assess(series, centers, *, spring=1000., temperature=300., interval_ps=.1,
     """
     centers = np.asarray(centers, float)
     report = dict(status='PMF yakınsamadı/kanıtlanmadı', accepted=False,
-                  expected_windows=17, actual_windows=len(series), failures=[], gates={})
+                  expected_windows=expected_windows, actual_windows=len(series), failures=[], gates={})
     gates = report['gates']
-    gates['complete_production'] = bool(complete and len(series)==len(centers)==17)
+    gates['complete_production'] = bool(complete and len(series)==len(centers)==expected_windows)
     gates['burn_in'] = bool(burn_ps >= 20)
-    gates['relaxed_nonclashing_starts'] = bool(starts is not None and len(starts)==17 and
+    gates['relaxed_nonclashing_starts'] = bool(starts is not None and len(starts)==expected_windows and
                                               all(np.isfinite(s['min_heavy_nm']) and s['min_heavy_nm']>=.15 for s in starts))
     if len(series) != len(centers) or not series:
         report['failures'] = [k for k,v in gates.items() if not v]
-        report['analysis_note'] = 'No complete 17-window ensemble; WHAM and convergence are unassessed.'
+        report['analysis_note'] = f'No complete {expected_windows}-window ensemble; WHAM and convergence are unassessed.'
         return report, None
     xs = [np.asarray(x,float) for x in series]
     gates['finite_samples'] = bool(all(x.ndim==1 and len(x)>=4 and np.isfinite(x).all() for x in xs))

@@ -85,6 +85,37 @@ is **not** a result and is not plotted as one. No EGFR free energy, barrier or
 affinity is claimed. `window_histograms.png` shows biased histograms only.
 The stored `analysis.json` that preceded this re-run (made mid-run) was stale.
 
+### Round 2 (2026-10-25): targeted re-sampling, still not converged
+Diagnosis of round 1: the only overlap failure was pair 10–11 (0.063); the
+dominant failure was coordinate autocorrelation (inefficiency 59–1650 samples
+of 0.1 ps) against 400 ps series. Ten blocks of 5×max-inefficiency need about
+82 ns in the worst window, far beyond the ~3 h budget, so extension was
+bounded, not sized to pass. Round 2 (`scripts/run_round2.py`,
+`results/atomistic_round2/`) adds window 11 at 2.2150 nm (between old 10 and 11,
+started from old window 10's state) and re-samples all 18 windows from the
+round-1 relaxed starts with new seeds: 20 ps burn-in + 500 ps each (5000
+samples/window, 18/18 finite, 8,208 s wall for the run). Spring constant,
+spacing and every gate threshold are unchanged. Round-1 data are kept
+separately, not pooled.
+
+Result with the same prespecified gates (`results/atomistic_round2/analysis.json`):
+7/14 gates pass, 7 fail → **PMF yakınsamadı / kanıtlanmadı** (round 1: 8 failed).
+
+| Gate | Required | Round 2 observed |
+|---|---|---|
+| Adjacent overlap | ≥0.10 | **passes**: min 0.120 (pair 15–16), range 0.120–0.825 |
+| Effective samples / window | ≥100 | **fails**: 2.9–69.6 (inefficiency 72–1729 samples) |
+| ≥10 bootstrap blocks / window | ≥10 | **fails**: 0 (block 8647 samples > 5000) |
+| WHAM solves converge <1e-9 kBT | all | **fails**: first-half solve residual 4.2e-8 |
+| Fixed-interval support, half/quarter agreement, bootstrap 100/100 | see SCOPE | **fail / not evaluable** (solver stopped after 2 solves) |
+
+Additional finding: in windows 2–8 the mean COM lags the bias center by
+0.15–0.47 nm (window 6: −0.47 nm), i.e. the ligand does not follow the moving
+restraint through that stretch (slow hidden mode / hysteresis), which is why
+inefficiency peaks at 1556–1729 samples in windows 7–8. More windows or
+longer runs alone will not fix this; a different coordinate or path sampling is
+needed. `results/atomistic_round2/UNACCEPTED_diagnostic.csv` is not a result.
+
 Method limits: 400 ps per window (sub-ns) is far shorter than ligand/protein
 relaxation times (autocorrelation up to ~165 ps in the coordinate alone, hidden
 modes slower); a single steered-MD pull supplies all starting states (one exit

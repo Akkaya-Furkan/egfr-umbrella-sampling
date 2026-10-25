@@ -2,6 +2,7 @@
 """Audit saved relaxed states independently of the live MD loop, then hash evidence."""
 import hashlib
 import json
+import sys
 from pathlib import Path
 import numpy as np
 from scipy.spatial import cKDTree
@@ -14,7 +15,7 @@ def digest(path):
 
 
 def main():
-    out=Path('results/atomistic')
+    out=Path(sys.argv[1] if len(sys.argv)>1 else 'results/atomistic')
     windows=json.loads((out/'windows.json').read_text()) if (out/'windows.json').exists() else []
     prm=app.AmberPrmtopFile('data/atomistic/solvated.prmtop')
     system=prm.createSystem(nonbondedMethod=app.PME,nonbondedCutoff=1*u.nanometer,constraints=app.HBonds)
@@ -41,7 +42,7 @@ def main():
         if abs(com-record['actual_com_nm'])>1e-10 or abs(minimum-record['min_heavy_nm'])>1e-10:
             raise ValueError(f'Start-state measurements differ on read-back: {path}')
         verified.append(dict(window=record['window'],com_nm=com,minimum_heavy_nm=minimum,**digest(path)))
-    report=dict(expected_start_states=17,verified_start_states=len(verified),
+    report=dict(expected_start_states=json.loads((out/'analysis.json').read_text())['expected_windows'],verified_start_states=len(verified),
                 nonclashing_start_states=sum(r['minimum_heavy_nm']>=.15 for r in verified),
                 states=verified)
     (out/'state_verification.json').write_text(json.dumps(report,indent=2)+'\n')
@@ -54,7 +55,9 @@ def main():
     analysis=json.loads((out/'analysis.json').read_text())
     expected += [f'samples_{i:02d}.npz' for i in analysis['completed_window_ids']]
     expected += list(analysis.get('partial_windows',{}))
-    paths=[out/p for p in expected]
+    # Round 2 reuses round-1 preparation records stored in results/atomistic.
+    shared=Path('results/atomistic')
+    paths=[out/p if (out/p).exists() or out==shared else shared/p for p in expected]
     if any(not p.is_file() or p.stat().st_size==0 for p in paths): raise ValueError('Missing retained atomistic evidence')
     files={p.name:digest(p) for p in paths}
     for name,old in analysis['input_series'].items():

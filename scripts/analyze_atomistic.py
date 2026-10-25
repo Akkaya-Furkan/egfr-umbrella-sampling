@@ -2,6 +2,7 @@
 """Re-read real saved samples; never publish an unaccepted reconstruction as PMF."""
 import hashlib
 import json
+import sys
 from pathlib import Path
 import numpy as np
 from umbrella.atomistic import assess
@@ -9,12 +10,13 @@ from umbrella.analysis import histograms, overlap
 
 
 def main():
-    out = Path('results/atomistic')
+    out = Path(sys.argv[1] if len(sys.argv)>1 else 'results/atomistic')
     sim_path = out/'simulation.json'
     sim = json.loads(sim_path.read_text()) if sim_path.exists() else {}
     config = sim.get('config',{})
     centers = config.get('centers_nm',list(range(17)))
-    expected = [out/f'samples_{w:02d}.npz' for w in range(17)]
+    n_win = len(centers)
+    expected = [out/f'samples_{w:02d}.npz' for w in range(n_win)]
     existing = [p for p in expected if p.is_file()]
     windows = json.loads((out/'windows.json').read_text()) if (out/'windows.json').exists() else []
     report,curve = assess([np.load(p)['r_nm'] for p in existing],centers,
@@ -22,10 +24,11 @@ def main():
                            temperature=config.get('temperature_K',300),
                            interval_ps=config.get('sample_interval_ps',.1),
                            burn_ps=config.get('burn_ps',0),starts=windows,
-                           complete=sim.get('status')=='production_complete')
+                           complete=sim.get('status')=='production_complete',
+                           expected_windows=n_win)
     report.update(simulation_status=sim.get('status','not started'),
                   completed_window_ids=[int(p.stem.split('_')[-1]) for p in existing],
-                  expected_series=17, verified_series=len(existing),
+                  expected_series=n_win, verified_series=len(existing),
                   missing_window_ids=[i for i,p in enumerate(expected) if not p.exists()],
                   simulation_error=sim.get('error'),
                   simulation_elapsed_seconds=sim.get('elapsed_seconds'),
