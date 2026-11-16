@@ -14,7 +14,7 @@
     "--signal=TERM",
     "--kill-after=30s",
     "8821s",
-    "/home/furkanakkaya/.conda/envs/openmm_env/bin/python",
+    "<conda-env>/bin/python",
     "-u",
     "scripts/run_atomistic.py",
     "--deadline-unix",
